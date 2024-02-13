@@ -5,6 +5,10 @@ using UnityEngine.InputSystem;
 
 public class Vaisseau : MonoBehaviour
 {
+    private float _valeurX;
+    private float _valeurY;
+    
+    private Vector2 _mouvementHorizontal;
 
     // Start is called before the first frame update
     void Start()
