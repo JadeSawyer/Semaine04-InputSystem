@@ -225,10 +225,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 59029608}
-  - component: {fileID: 59029607}
   - component: {fileID: 59029606}
+  - component: {fileID: 59029609}
   m_Layer: 0
-  m_Name: ScriptControleMusique
+  m_Name: Exemple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,23 +304,27 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 6d67572f-e109-4620-8b53-f5eea576f5fc
     m_ActionName: PourMusique/FaireDisparaitre[/Keyboard/x]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 59029609}
+        m_TargetAssemblyTypeName: Apparait, Assembly-CSharp
+        m_MethodName: Apparaitre
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 364c4e2c-1735-461b-a89d-66b879d7c708
+    m_ActionName: PourMusique/FaireApparaitre[/Keyboard/p]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PourMusique
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &59029607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59029605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e07abfedc7303004e8bafda112f5ac84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &59029608
 Transform:
   m_ObjectHideFlags: 0
@@ -336,6 +340,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &59029609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59029605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76b91de6b8fa38643959c1450f79d26e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0

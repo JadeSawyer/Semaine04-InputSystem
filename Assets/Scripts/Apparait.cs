@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeMusique : MonoBehaviour
+public class Apparait : MonoBehaviour
 {
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,10 @@ public class ChangeMusique : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Apparaitre()
+    {
+        Debug.Log("ok");
     }
 }
