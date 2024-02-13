@@ -352,6 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76b91de6b8fa38643959c1450f79d26e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _leSol: {fileID: 705906101}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Apparait : MonoBehaviour
 {
-
+    [SerializeField] private GameObject _leSol;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,6 @@ public class Apparait : MonoBehaviour
 
     public void Apparaitre()
     {
-        Debug.Log("ok");
+        _leSol.SetActive(true);
     }
 }
