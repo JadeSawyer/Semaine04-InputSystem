@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Vaisseau : MonoBehaviour
 {
@@ -17,8 +18,8 @@ public class Vaisseau : MonoBehaviour
         
     }
 
-    public void RecevoirInfo()
+    public void RecevoirInfo(InputAction.CallbackContext context)
     {
-        Debug.Log("ok");
+        Debug.Log(context.ReadValue<Vector2>());
     }
 }
