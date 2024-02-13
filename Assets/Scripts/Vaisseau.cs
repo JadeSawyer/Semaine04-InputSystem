@@ -15,11 +15,16 @@ public class Vaisseau : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Bouge();
     }
 
     public void RecevoirInfo(InputAction.CallbackContext context)
     {
-        Debug.Log(context.ReadValue<Vector2>());
+        Debug.Log(context.ReadValue<Vector2>()); // (1,0) (-1,0) (0,0)
+    }
+
+    void Bouge()
+    {
+
     }
 }
