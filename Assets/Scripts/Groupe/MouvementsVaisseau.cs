@@ -6,16 +6,18 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class MouvementsVaisseau : MonoBehaviour
-{
+{ 
+    // Valeur de contrôle horizontal provenant du joueur
+    private float _valeurX;
+    // Valeur de contrôle vertical provenant du joueur
+    private float _valeurY;
+
     private Rigidbody _rb;
 
     private Vector2 _valeurRecue;
 
-    // Valeur de contrôle vertical provenant du joueur
-    private float _mouvementVertical;
-    // Valeur de contrôle horizontal provenant du joueur
-    private float _mouvementHorizontal;
-
+   
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +32,11 @@ public class MouvementsVaisseau : MonoBehaviour
 
     void Bouger()
     {
-        _rb.velocity = new Vector2(_mouvementHorizontal, _mouvementVertical);
+        //_rb.velocity = new Vector2(-1, 0);
+        _valeurX = _valeurRecue.x;
+        _valeurY = _valeurRecue.y;
+
+        _rb.velocity = new Vector3(_valeurX, 0, _valeurY);
     }
 
     public void OnMove(InputValue value)
@@ -38,8 +44,5 @@ public class MouvementsVaisseau : MonoBehaviour
         //Debug.Log(value.Get<Vector2>());
 
         _valeurRecue = value.Get<Vector2>();
-
-        _mouvementHorizontal = _valeurRecue.x;
-        _mouvementVertical = _valeurRecue.y;
     }
 }
