@@ -29,6 +29,6 @@ public class Vaisseau : MonoBehaviour
 
     void Bouge()
     {
-
+        transform.Translate(Vector3.forward * Time.deltaTime);
     }
 }
