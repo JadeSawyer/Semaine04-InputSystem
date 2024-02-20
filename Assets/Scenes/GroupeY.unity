@@ -136,8 +136,8 @@ GameObject:
   - component: {fileID: 792983425}
   - component: {fileID: 792983424}
   m_Layer: 0
-  m_Name: Plane
-  m_TagString: Untagged
+  m_Name: Sol
+  m_TagString: Sol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

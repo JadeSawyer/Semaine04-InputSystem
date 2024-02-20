@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 2373525646638476341}
   - component: {fileID: 3148071243169714457}
   - component: {fileID: 2396545022667144274}
+  - component: {fileID: 2298899755070689123}
   m_Layer: 7
   m_Name: Cube
   m_TagString: CubePoints
@@ -434,6 +435,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2298899755070689123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6764976362295141223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c85c604186e29184b84334ed06ef61b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cubeDedans: {fileID: 3573709168462146198}
 --- !u!1 &7761340572997428397
 GameObject:
   m_ObjectHideFlags: 0
