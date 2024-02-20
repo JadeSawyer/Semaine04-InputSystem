@@ -50,6 +50,11 @@ public class MouvementsVaisseau : MonoBehaviour
 // -------------------------------------------------------------------------------------------------------
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log(other.gameObject.tag);
+        // Debug.Log(other.gameObject.tag);
+
+        if(other.gameObject.CompareTag("CubePoints"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }

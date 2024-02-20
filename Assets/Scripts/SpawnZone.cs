@@ -17,7 +17,7 @@ public class SpawnZone : MonoBehaviour
         _valeurHasardAppelerMethode = Random.Range(1, 3);
         _valeurHasardRepeterApresTemps = Random.Range(2, 4);
 
-        InvokeRepeating("AddGameObject", _valeurHasardAppelerMethode, repeatTime);
+        InvokeRepeating("AddGameObject", _valeurHasardAppelerMethode, 5);
     }
 
     // Update is called once per frame
