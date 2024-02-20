@@ -30,6 +30,7 @@ public class MouvementsVaisseau : MonoBehaviour
         Bouger();
     }
 
+// -------------------------------------------------------------------------------------------------------
     void Bouger()
     {
         //_rb.velocity = new Vector2(-1, 0);

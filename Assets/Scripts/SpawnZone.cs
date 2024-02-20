@@ -6,7 +6,6 @@ public class SpawnZone : MonoBehaviour
 {
     [SerializeField] private GameObject _cubePrefab;
     [SerializeField] Vector3 _zoneSize;
-    [SerializeField] private float repeatTime = 0.5f;
 
     private float _valeurHasardAppelerMethode;
     private float _valeurHasardRepeterApresTemps;
