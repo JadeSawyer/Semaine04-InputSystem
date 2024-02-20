@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 2396545022667144274}
   m_Layer: 7
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: CubePoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -334,7 +334,7 @@ Transform:
   m_Children:
   - {fileID: 3787620656558293954}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8082951598737161876
 MeshFilter:
@@ -428,7 +428,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

@@ -36,13 +36,20 @@ public class MouvementsVaisseau : MonoBehaviour
         _valeurX = _valeurRecue.x;
         _valeurY = _valeurRecue.y;
 
-        _rb.velocity = new Vector3(_valeurX, 0, _valeurY);
+        _rb.velocity = new Vector3(_valeurX, _valeurY, 0);
     }
 
+// -------------------------------------------------------------------------------------------------------
     public void OnMove(InputValue value)
     {
         //Debug.Log(value.Get<Vector2>());
 
         _valeurRecue = value.Get<Vector2>();
+    }
+
+// -------------------------------------------------------------------------------------------------------
+    private void OnCollisionEnter(Collision other)
+    {
+        Debug.Log(other.gameObject.tag);
     }
 }

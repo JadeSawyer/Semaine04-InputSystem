@@ -40,6 +40,5 @@ public class Vaisseau : MonoBehaviour
         _rb.AddForce(_mouvement * 40, ForceMode.Force);
 
         //_rb.AddForce(_mouvementHorizontal, ForceMode.Force);
-
     }
 }
