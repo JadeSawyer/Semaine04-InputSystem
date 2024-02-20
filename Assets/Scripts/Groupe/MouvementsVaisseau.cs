@@ -12,6 +12,8 @@ public class MouvementsVaisseau : MonoBehaviour
     // Valeur de contrôle vertical provenant du joueur
     private float _valeurY;
 
+    private int _points = 0;
+
     private Rigidbody _rb;
 
     private Vector2 _valeurRecue;
@@ -56,6 +58,8 @@ public class MouvementsVaisseau : MonoBehaviour
         if(other.gameObject.CompareTag("CubePoints"))
         {
             Destroy(other.gameObject);
+            _points++;
+            Debug.Log(_points);
         }
 
         if(other.gameObject.CompareTag("DetruirePlayer"))
