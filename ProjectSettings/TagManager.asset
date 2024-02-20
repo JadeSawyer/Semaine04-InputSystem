@@ -7,6 +7,7 @@ TagManager:
   - Danger
   - CubePoints
   - Sol
+  - DetruirePlayer
   layers:
   - Default
   - TransparentFX

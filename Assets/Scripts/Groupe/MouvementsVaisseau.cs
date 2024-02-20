@@ -36,7 +36,7 @@ public class MouvementsVaisseau : MonoBehaviour
         _valeurX = _valeurRecue.x;
         _valeurY = _valeurRecue.y;
 
-        _rb.velocity = new Vector3(_valeurX, _valeurY, 0);
+        _rb.velocity = new Vector3(_valeurX * 10, _valeurY * 10, 0);
     }
 
 // -------------------------------------------------------------------------------------------------------
@@ -55,6 +55,11 @@ public class MouvementsVaisseau : MonoBehaviour
         if(other.gameObject.CompareTag("CubePoints"))
         {
             Destroy(other.gameObject);
+        }
+
+        if(other.gameObject.CompareTag("DetruirePlayer"))
+        {
+            Destroy(gameObject);
         }
     }
 }
